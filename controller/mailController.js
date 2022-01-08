@@ -2,11 +2,13 @@
 const mailer = require('../mailer')
 
 exports.index = async function(req, res) {
-    res.status(200).json({
+    res.status(200).send(
+    {
         "mailId": "your_mail_id",
         "mailSubject": "your_mail_subject",
         "mailBody": "your_mail_Body",
-    })
+    }
+    )
 }
 
 exports.sendMail = async function(req, res) {
