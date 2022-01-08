@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 8080
 
 // router
-const mailRouter = require('./routes/routes')
+const mailRouter = require('./routes/sendMail')
 
 // log request
 app.use(morgan('tiny'))
